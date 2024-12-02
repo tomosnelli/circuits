@@ -1,0 +1,23 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="500000" NLsteps="100000" reaStep="1000000" animate="1" >
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-81" mainComp="false" ShowProp="Voltage" Show_id="true" Show_Val="true" Pos="-416,224" rotation="0" hflip="1" vflip="1" label="R" idLabPos="-3.06146,-22.2589" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="false" />
+
+<item itemtype="Or Gate" CircId="Or Gate-83" mainComp="false" Show_id="false" Show_Val="false" Pos="-360,228" rotation="0" hflip="1" vflip="1" label="Or Gate-83" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Invert_Inputs="false" Num_Inputs="2 _Inputs" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" initHigh="false" Inverted="true" Open_Collector="false" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-84" mainComp="false" ShowProp="Voltage" Show_id="true" Show_Val="true" Pos="-416,272" rotation="0" hflip="1" vflip="1" label="S" idLabPos="-2.62619,-20.5178" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="false" />
+
+<item itemtype="Or Gate" CircId="Or Gate-86" mainComp="false" Show_id="false" Show_Val="false" Pos="-360,268" rotation="0" hflip="1" vflip="1" label="Or Gate-86" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Invert_Inputs="false" Num_Inputs="2 _Inputs" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" initHigh="false" Inverted="true" Open_Collector="false" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" />
+
+<item itemtype="Probe" CircId="Probe-102" mainComp="false" ShowProp="Threshold" Show_id="true" Show_Val="true" Pos="-316,212" rotation="-45" hflip="1" vflip="1" label="Q" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Probe" CircId="Probe-103" mainComp="false" ShowProp="Threshold" Show_id="true" Show_Val="true" Pos="-324,252" rotation="-45" hflip="1" vflip="1" label="^Q" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Connector" uid="Connector-244" startpinid="Or Gate-86-out" endpinid="Or Gate-83-in1" pointList="-344,268,-340,268,-340,244,-388,244,-388,232,-376,232" />
+
+<item itemtype="Connector" uid="Connector-245" startpinid="Or Gate-83-out" endpinid="Or Gate-86-in0" pointList="-344,228,-332,228,-332,252,-388,252,-388,264,-376,264" />
+
+<item itemtype="Connector" uid="Connector-259" startpinid="Fixed Voltage-81-outnod" endpinid="Or Gate-83-in0" pointList="-400,224,-376,224" />
+
+<item itemtype="Connector" uid="Connector-260" startpinid="Fixed Voltage-84-outnod" endpinid="Or Gate-86-in1" pointList="-400,272,-376,272" />
+
+</circuit>
